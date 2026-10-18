@@ -1,0 +1,26 @@
+[
+  {
+    "id": "BN-F8FBC614",
+    "createdAt": "2026-10-17T15:08:39.669Z",
+    "status": "New",
+    "requestType": "Both",
+    "fullName": "ntando",
+    "studentNumber": "262281376",
+    "phone": "+27790505080",
+    "email": "lukhelentando81@gmail.com",
+    "campus": "ump",
+    "startDate": "2026-11-06",
+    "endDate": "2026-12-12",
+    "items": [
+      "Suitcases and bags",
+      "Boxes and personal belongings",
+      "Clothes and shoes",
+      "Books and study materials"
+    ],
+    "quantities": "3 boxs,fridge and microwave",
+    "fridgeNeeded": false,
+    "payment": "Deposit",
+    "notes": "",
+    "consent": true
+  }
+]

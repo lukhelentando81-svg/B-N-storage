@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#172d39"><title>B&N Storage | Admin</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="/admin.css"><script src="/admin.js" defer></script></head>
+<body class="admin-body">
+<header class="site-header admin-header"><a class="brand" href="/"><span class="brand-mark">B<span>&amp;</span>N</span><span class="brand-word">STORAGE<small>BOOKING ADMIN</small></span></a><a href="/" class="text-link">← Back to website</a></header>
+<main class="admin-main">
+  <section id="loginPanel" class="admin-login"><div class="eyebrow"><span></span> PRIVATE BUSINESS AREA</div><h1>Welcome<br><em>back.</em></h1><p>Sign in to view and manage student storage requests.</p><div id="loginError" class="form-alert error" hidden></div><form id="loginForm"><label class="field"><span>Username</span><input name="username" autocomplete="username" required></label><label class="field"><span>Password</span><input name="password" type="password" autocomplete="current-password" required></label><button class="button button-dark" type="submit">Sign in <span>↗</span></button></form><small>Admin access is disabled until you configure credentials in your .env file.</small></section>
+  <section id="dashboard" hidden><div class="admin-title"><div><div class="eyebrow"><span></span> BUSINESS OVERVIEW</div><h1>Storage <em>requests.</em></h1><p>Review student enquiries, update booking status and export records.</p></div><div class="admin-actions"><button id="refreshButton" class="button button-yellow">↻ Refresh</button><button id="exportButton" class="button button-dark">Export CSV ↓</button><button id="logoutButton" class="button button-outline">Sign out</button></div></div>
+  <div class="admin-stats"><div><small>TOTAL REQUESTS</small><strong id="totalCount">0</strong></div><div><small>NEW</small><strong id="newCount">0</strong></div><div><small>CONFIRMED</small><strong id="confirmedCount">0</strong></div><div><small>DEPOSIT PENDING</small><strong id="depositCount">0</strong></div></div>
+  <div class="admin-list-heading"><h2>All requests</h2><input id="searchInput" placeholder="Search name, reference or phone…" aria-label="Search bookings"></div><div id="bookingsList" class="bookings-list"></div><p class="admin-warning">Privacy reminder: student contact details are confidential. Only authorised staff should access or export these records.</p></section>
+</main>
+<footer class="footer"><p>B&amp;N Storage · Private admin area</p><small>Keep your admin password and .env file private.</small></footer>
+</body></html>
